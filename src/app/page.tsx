@@ -14,7 +14,7 @@ export default function Home() {
       >
         <div className='flex justify-center'>
           <Image
-            src='/avatar.jpg'
+            src='/portfolio/avatar.jpg'
             alt='Vercel Logo'
             className='rounded-full'
             width={120}
@@ -34,7 +34,7 @@ export default function Home() {
         <div className='flex justify-center gap-4 mt-2 md:mt-4'>
           <a href='https://github.com/aliciacyy' target='_blank'>
             <Image
-              src='/github.png'
+              src='/portfolio/github.png'
               alt='Vercel Logo'
               className='cursor-pointer'
               width={24}
@@ -44,7 +44,7 @@ export default function Home() {
           </a>
           <a href='https://www.linkedin.com/in/alicia-chenyy/' target='_blank'>
             <Image
-              src='/linkedin.png'
+              src='/portfolio/linkedin.png'
               alt='Vercel Logo'
               className='cursor-pointer'
               width={24}
@@ -56,7 +56,7 @@ export default function Home() {
       </header>
 
       <main className='flex-1 p-4 md:p-8 md:h-screen overflow-auto'>
-        <h2 className='text-2xl mb-4 font-bold md:mt-4'>// Hello World!</h2>
+        <h2 className='text-2xl mb-4 font-bold md:mt-4'>{'// Hello World!'}</h2>
         <p>
           A senior software engineer based in Singapore with 8+ years of
           full-stack engineering experience in designing, developing, and
@@ -67,7 +67,7 @@ export default function Home() {
           soft skills to further my career path.
         </p>
 
-        <h2 className='text-2xl mb-4 font-bold mt-8'>// Work Experience</h2>
+        <h2 className='text-2xl mb-4 font-bold mt-8'>{'// Work Experience'}</h2>
         <p className='font-bold'>Neurowyzr, Singapore (Jan 2023 - Present)</p>
         <p className='italic'>Senior Software Engineer</p>
         <p className='mb-4'>
@@ -94,16 +94,16 @@ export default function Home() {
           Expense Management.
         </p>
 
-        <h2 className='text-2xl mb-4 font-bold mt-8'>// Education</h2>
+        <h2 className='text-2xl mb-4 font-bold mt-8'>{'// Education'}</h2>
         <p className='font-bold'>
           Nanyang Technological University (2011 - 2015)
         </p>
         <p>Bachelor of Engineering (Computer Science)</p>
 
-        <h2 className='text-2xl mb-4 font-bold mt-8'>// Technical Skills</h2>
+        <h2 className='text-2xl mb-4 font-bold mt-8'>{'// Technical Skills'}</h2>
         <p>Coming soon.</p>
 
-        <h2 className='text-2xl mb-4 font-bold mt-8'>// Personal Projects</h2>
+        <h2 className='text-2xl mb-4 font-bold mt-8'>{'// Personal Projects'}</h2>
         <p>Coming soon.</p>
 
         <div className='italic mt-8'>Icons from Flaticon. All rights reserved.</div>

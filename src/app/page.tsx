@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import { Roboto_Slab } from 'next/font/google';
+import SkillCard from '@/components/SkillCard';
+import Project from '@/components/Project';
 
 const font = Roboto_Slab({ subsets: ['latin'] });
 
@@ -58,13 +60,16 @@ export default function Home() {
       <main className='flex-1 p-4 md:p-8 md:h-screen overflow-auto'>
         <h2 className='text-2xl mb-4 font-bold md:mt-4'>{'// Hello World!'}</h2>
         <p>
-          A senior software engineer based in Singapore with 8+ years of
-          full-stack engineering experience in designing, developing, and
-          maintaining software.
+          A senior software engineer based in Singapore with 8+ years of 
+          <span className='font-bold'> full-stack</span> engineering experience in designing, developing, and
+          maintaining software, primarily in web applications for B2B use cases.
         </p>
         <p>
-          Looking to expand technical knowledge further as well as improving on
+          Looking to expand and grow my technical knowledge as well as improving on
           soft skills to further my career path.
+        </p>
+        <p>
+          <span className='font-bold'>Current status:</span> Open to new opportunities - contact me via LinkedIn!
         </p>
 
         <h2 className='text-2xl mb-4 font-bold mt-8'>{'// Work Experience'}</h2>
@@ -89,9 +94,9 @@ export default function Home() {
         </p>
         <p className='italic'>Software Engineer</p>
         <p>
-          Software engineer leading a small sub-team to fulfill features for our
-          software and providing continuous technical support, mainly on HUE -
-          Expense Management.
+          Full-stack software engineer leading a small sub-team to fulfill
+          features for our software and providing continuous technical support,
+          mainly on HUE - Expense Management.
         </p>
 
         <h2 className='text-2xl mb-4 font-bold mt-8'>{'// Education'}</h2>
@@ -100,13 +105,59 @@ export default function Home() {
         </p>
         <p>Bachelor of Engineering (Computer Science)</p>
 
-        <h2 className='text-2xl mb-4 font-bold mt-8'>{'// Technical Skills'}</h2>
-        <p>Coming soon.</p>
+        <h2 className='text-2xl mb-4 font-bold mt-8'>
+          {'// Technical Skills'}
+        </h2>
+        <div className='md:flex md:gap-4'>
+          <SkillCard
+            title='Programming Languages'
+            skills={['Java', 'Scala', 'Python', 'C++', 'C', 'SQL']}
+          />
+          <SkillCard
+            title='Web Development'
+            skills={[
+              'HTML5/CSS3',
+              'Angular/AngularJS',
+              'React',
+              'LESS/SASS',
+              'Javascript',
+              'jQuery',
+              'Google Closure',
+              'PHP',
+              'XML',
+            ]}
+          />
+          <SkillCard
+            title='Database and Others'
+            skills={[
+              'MongoDB',
+              'PostgreSQL',
+              'DynamoDB',
+              'Git',
+              'Docker',
+              'IntelliJ IDEA',
+              'Eclipse',
+              'AWS',
+            ]}
+          />
+        </div>
 
-        <h2 className='text-2xl mb-4 font-bold mt-8'>{'// Personal Projects'}</h2>
-        <p>Coming soon.</p>
+        <h2 className='text-2xl mb-4 font-bold mt-8'>
+          {'// Personal Projects'}
+        </h2>
+        <p className='mb-4'>Featuring a few of my favourite personal projects.</p>
+        <div className='md:flex md:gap-4'>
+          <Project
+            title='TwoWordy'
+            imgPath='/portfolio/twowordy.png'
+            link='https://twowordy.com/'
+            description="A web game where players can play with each other online in real-time to guess their opponents' words."
+          />
+        </div>
 
-        <div className='italic mt-8'>Icons from Flaticon. All rights reserved.</div>
+        <div className='italic mt-8'>
+          Icons from Flaticon. All rights reserved.
+        </div>
       </main>
     </div>
   );

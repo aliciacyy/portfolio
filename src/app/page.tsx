@@ -24,10 +24,10 @@ export default function Home() {
             priority
           />
         </div>
-        <div className='flex justify-center text-2xl md:text-3xl font-bold mt-4 md:mt-8'>
+        <div className='flex justify-center text-2xl md:text-3xl font-bold text-center mt-4 md:mt-8'>
           Alicia Chen
         </div>
-        <div className='flex justify-center text-lg md:text-xl mt-2 md:mt-4'>
+        <div className='flex justify-center text-lg md:text-xl mt-2 text-center md:mt-4'>
           Software Engineer
         </div>
         <div className='flex justify-center text-md md:mt-2'>

@@ -68,7 +68,7 @@ export default function Home() {
             applications for B2B use cases.
           </p>
           <p>
-            Outside of work, I enjoy solving Rubik's cubes, video games and coming
+            Outside of work, I enjoy solving Rubik&apos;s cubes, video games and coming
             up with small, personal coding projects for self-learning.
           </p>
           <p>

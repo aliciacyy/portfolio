@@ -58,29 +58,30 @@ export default function Home() {
         </div>
       </header>
 
-      <main className='flex-1 p-4 md:p-8 md:h-screen overflow-auto'>
+      <main className='flex-1 p-4 pt-8 md:p-8 md:h-screen overflow-auto'>
         <h2 className='text-3xl mb-4 font-bold md:mt-4'>{'// Hello World!'}</h2>
         <div className='rounded-lg bg-white block p-4 drop-shadow-md'>
           <p>
-            A senior software engineer based in Singapore with <span className='font-bold'> 8+ years of
-             full-stack engineering experience </span>
+            A senior software engineer based in Singapore with{' '}
+            <span className='font-bold'>
+              {' '}
+              8+ years of full-stack engineering experience{' '}
+            </span>
             in designing, developing, and maintaining software, primarily in web
             applications for B2B use cases.
           </p>
           <p>
-            Outside of work, I enjoy solving Rubik&apos;s cubes, video games and coming
-            up with small, personal coding projects for self-learning.
+            Outside of work, I enjoy solving Rubik&apos;s cubes, video games and
+            coming up with small, personal coding projects for self-learning.
           </p>
           <p>
-            Looking to expand and grow my technical knowledge as well as improving
-            on soft skills to further my career path.
+            Looking to expand and grow my technical knowledge as well as
+            improving on soft skills to further my career path.
           </p>
         </div>
 
         <h2 className='text-3xl mb-4 font-bold mt-8'>{'// Work Experience'}</h2>
-        <p>
-          For more details, feel free to reach out to me via LinkedIn.
-        </p>
+        <p>For more details, feel free to reach out to me via LinkedIn.</p>
         <ExperienceCard
           company='Neurowyzr, Singapore (Jan 2023 - Present)'
           title='Senior Software Engineer'
@@ -122,8 +123,12 @@ export default function Home() {
               />
             </div>
             <div>
-              <div className='px-4 pt-4 font-bold'>Nanyang Technological University (2011 - 2015)</div>
-              <div className='px-4 pt-1 pb-4 italic'>Bachelor of Engineering (Computer Science)</div>
+              <div className='px-4 pt-4 font-bold'>
+                Nanyang Technological University (2011 - 2015)
+              </div>
+              <div className='px-4 pt-1 pb-4 italic'>
+                Bachelor of Engineering (Computer Science)
+              </div>
             </div>
           </div>
         </div>
@@ -131,7 +136,7 @@ export default function Home() {
         <h2 className='text-3xl mb-4 font-bold mt-8'>
           {'// Technical Skills'}
         </h2>
-        <div className='md:flex md:gap-4'>
+        <div className='md:grid md:grid-cols-3 md:gap-4'>
           <SkillCard
             title='Programming Languages'
             skills={['Java', 'Scala', 'Python', 'C++', 'C', 'SQL']}
@@ -172,12 +177,18 @@ export default function Home() {
         <p className='mb-4'>
           Featuring a few of my favourite personal projects.
         </p>
-        <div className='md:flex md:gap-4'>
+        <div className='md:grid md:grid-cols-3 md:gap-4'>
           <Project
             title='TwoWordy'
             imgPath='/portfolio/twowordy.png'
             link='https://twowordy.com/'
-            description="A web game where players can play with each other online in real-time to guess their opponents' words."
+            description="A mobile-responsive web game where players can play with each other online in real-time to guess their opponents' words."
+          />
+          <Project
+            title='AGO'
+            imgPath='/portfolio/ago.png'
+            link='https://aliciacyy.github.io/games-cafe'
+            description="A simple mobile-responsive website designed for an imaginary games cafe company."
           />
         </div>
 
